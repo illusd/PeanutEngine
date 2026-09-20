@@ -1,0 +1,52 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "§6PeanutEngine §e花生引擎",
+    "description": "§a26.51穩定Custom Command｜金錢/ah｜rtp｜tpa｜home｜bp｜領地｜連鎖｜雙門｜夜視\n§7不需Beta APIs｜@minecraft/server 2.10.0",
+    "uuid": "e8f9a0b1-c2d3-4e5f-6789-0abcdef12345",
+    "version": [
+      1,
+      4,
+      2
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "f9a0b1c2-d3e4-5f67-890a-bcdef1234567",
+      "version": [
+        1,
+        4,
+        2
+      ]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "a0b1c2d3-e4f5-6789-0abc-def123456789",
+      "version": [
+        1,
+        4,
+        2
+      ],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.10.0"
+    }
+  ],
+  "metadata": {
+    "product_type": "addon",
+    "authors": [
+      "PeanutEngine"
+    ]
+  }
+}
