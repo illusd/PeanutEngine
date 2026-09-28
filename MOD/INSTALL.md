@@ -1,12 +1,16 @@
 # Install
 
-## Java Paper/Spigot
-1. Download release JAR or build: `cd MOD/java && mvn package`
-2. Put `target/PeanutEngine.jar` in `plugins/`
-3. Restart server
-4. `/pe`
+## Java
+1. Build jar or download Release asset
+2. Put `PeanutEngine.jar` in `plugins/`
+3. Restart — keepInventory is forced on
+4. `/pe` `/map live`
 
-## Bedrock BDS
-1. Put `PeanutEngine_BP` in `behavior_packs/`
-2. Enable in `world_behavior_packs.json` with pack UUID from manifest.json
-3. Commands: `/pe:help`
+## Bedrock
+1. Install behavior pack
+2. Enable **Beta APIs**
+3. `world_behavior_packs.json` pack_id from manifest
+4. `/help` `/map live`
+
+## Death
+Keep inventory is **on by default** (gamerule + event).

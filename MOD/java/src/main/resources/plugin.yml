@@ -1,76 +1,64 @@
 name: PeanutEngine
-version: '2.0.0'
+version: '2.2.0'
 main: com.peanutengine.PeanutEnginePlugin
 api-version: '1.21'
 author: PeanutEngine
-description: Full survival QoL - money, AH, RTP, TPA, homes, backpack, land claims, vein miner, double doors, night vision, sleep, ban
+description: Full survival QoL - keep inventory, map radar, economy, TPA, homes, land, vein
 commands:
   pe:
-    description: PeanutEngine help
-    usage: /pe
+    description: Help
   money:
-    description: Check balance
+    description: Balance
     aliases: [bal, balance]
   pay:
-    description: Pay a player
-    usage: /pay <player> <amount>
+    description: Pay player
   ah:
-    description: Auction house
-    usage: /ah
+    description: Auction
   rtp:
     description: Random teleport
   tpa:
-    description: Request teleport to player
-    usage: /tpa <player>
+    description: TPA request
   tpahere:
-    description: Request player to teleport to you
-    usage: /tpahere <player>
+    description: TPA here
   tpaccept:
     description: Accept TPA
     aliases: [tpaaccept]
   tpacancel:
-    description: Cancel/deny TPA
+    description: Cancel TPA
     aliases: [tpadeny, tpdeny]
   tpauto:
-    description: Toggle auto-accept TPA
+    description: Auto-accept TPA
   seth:
     description: Set home
-    usage: /seth <name>
     aliases: [sethome]
   h:
-    description: Go home
-    usage: /h [name]
+    description: Home
     aliases: [home]
   delh:
     description: Delete home
-    usage: /delh <name>
     aliases: [delhome]
   bp:
     description: Backpack
-    usage: /bp <1-5>
   t:
-    description: Land claim system
-    usage: /t
+    description: Land claims
   delt:
     description: Delete land
-    usage: /delt <name>
   sleep:
-    description: Teleport to bed
+    description: Bed recall
+  map:
+    description: On-screen live radar map
+    usage: /map [live]
   ban:
-    description: Ban player
-    usage: /ban <player> [reason]
+    description: Ban
     permission: peanutengine.ban
   unban:
-    description: Unban player
-    usage: /unban <player>
+    description: Unban
     permission: peanutengine.ban
   banlist:
-    description: List bans
+    description: Ban list
     permission: peanutengine.ban
 permissions:
   peanutengine.ban:
-    description: Ban/unban players
     default: op
   peanutengine.admin:
-    description: Admin money give
     default: op

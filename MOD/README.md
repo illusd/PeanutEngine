@@ -1,32 +1,25 @@
-# PeanutEngine
+# PeanutEngine MOD
 
-Server QoL for **Minecraft Java (Paper/Spigot 1.21+)** and **Bedrock 26.51**.
+**v2.2** — Java Paper + Bedrock
 
-## Download
+## Features
+- Economy, TPA, RTP, homes, backpack, land claims
+- Vein miner, double doors, offhand torch NV, one-player night skip
+- **Keep inventory on death** (both platforms)
+- **Live radar map**: `/map live` (on-screen)
+- Native commands (Bedrock needs **Beta APIs** for chat cmds like `/money`)
 
-- **Java**: `PeanutEngine-Java.zip` → extract `PeanutEngine.jar` into `plugins/`
-- **Bedrock**: `PeanutEngine.mcpack` or use `bedrock/PeanutEngine_BP`
+## Java
+```bash
+cd MOD/java && python3 decode_sources.py   # if using b64 archives
+mvn package
+# plugins/PeanutEngine.jar
+```
+Commands: `/pe` `/money` `/map live` … — no `pe:` prefix
 
-Build Java from source: `cd java && mvn package` (Java 21 + Paper API)
-
-## Java commands (no pe: prefix)
-
-| Command | Description |
-|---------|-------------|
-| `/pe` | Help |
-| `/money` `/pay` `/ah sell` | Economy |
-| `/rtp` `/tpa` `/tpahere` `/tpaccept` `/tpacancel` `/tpauto` | Teleport |
-| `/seth` `/h` `/delh` | Homes |
-| `/bp` | Backpack |
-| `/t select` `/t done` `/t protect` `/t out` `/delt` | Land |
-| `/sleep` | Bed recall |
-| `/ban` `/unban` `/banlist` | Ban (op) |
-
-## Bedrock commands
-
-Use `/pe:` prefix (Custom Command API, no Beta APIs). See root README.
+## Bedrock
+Use `PeanutEngine.mcpack` or `bedrock/PeanutEngine_BP`.
+Enable Beta APIs. Commands: `/help` `/money` `/map live`
 
 ## Creators
-
-- Ian
-- Grok
+Ian · Grok
