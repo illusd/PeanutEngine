@@ -1,0 +1,8 @@
+starting-money: 500
+max-vein-size: 48
+rtp-range: 3000
+tpa-timeout-seconds: 60
+max-homes: 10
+max-lands-per-player: 5
+backpack-pages: 5
+backpack-slots-per-page: 27
