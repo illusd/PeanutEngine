@@ -1,0 +1,76 @@
+name: PeanutEngine
+version: '2.0.0'
+main: com.peanutengine.PeanutEnginePlugin
+api-version: '1.21'
+author: PeanutEngine
+description: Full survival QoL - money, AH, RTP, TPA, homes, backpack, land claims, vein miner, double doors, night vision, sleep, ban
+commands:
+  pe:
+    description: PeanutEngine help
+    usage: /pe
+  money:
+    description: Check balance
+    aliases: [bal, balance]
+  pay:
+    description: Pay a player
+    usage: /pay <player> <amount>
+  ah:
+    description: Auction house
+    usage: /ah
+  rtp:
+    description: Random teleport
+  tpa:
+    description: Request teleport to player
+    usage: /tpa <player>
+  tpahere:
+    description: Request player to teleport to you
+    usage: /tpahere <player>
+  tpaccept:
+    description: Accept TPA
+    aliases: [tpaaccept]
+  tpacancel:
+    description: Cancel/deny TPA
+    aliases: [tpadeny, tpdeny]
+  tpauto:
+    description: Toggle auto-accept TPA
+  seth:
+    description: Set home
+    usage: /seth <name>
+    aliases: [sethome]
+  h:
+    description: Go home
+    usage: /h [name]
+    aliases: [home]
+  delh:
+    description: Delete home
+    usage: /delh <name>
+    aliases: [delhome]
+  bp:
+    description: Backpack
+    usage: /bp <1-5>
+  t:
+    description: Land claim system
+    usage: /t
+  delt:
+    description: Delete land
+    usage: /delt <name>
+  sleep:
+    description: Teleport to bed
+  ban:
+    description: Ban player
+    usage: /ban <player> [reason]
+    permission: peanutengine.ban
+  unban:
+    description: Unban player
+    usage: /unban <player>
+    permission: peanutengine.ban
+  banlist:
+    description: List bans
+    permission: peanutengine.ban
+permissions:
+  peanutengine.ban:
+    description: Ban/unban players
+    default: op
+  peanutengine.admin:
+    description: Admin money give
+    default: op
